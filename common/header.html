@@ -1,8 +1,5 @@
 <!-- .wrap.contents.clearfix seems to left justify to existing header and remains responsive... -->
-<script>
-   const tiaaBaseURL = "tiaa-forum.org";
-   const tiaaDiscourseURL = "discourse." + tiaaBaseURL;
-</script>
+
 <div id='tiaa-header-loggedon' class='wrap contents clearfix'>
 <script>
 </script>
@@ -10,14 +7,14 @@
       <div class="Navigation-inner">
         <ul class="Navigation-inner-list Navigation-inner-list--breadcrumb">
           <li class="NavigationItem NavigationItem--main">
-           <a class="NavigationItem-link-nobg tiaa-logo-div" href="//tiaabaseurl">
+           <a class="NavigationItem-link-nobg tiaa-logo-div" href="//tiaa-forum.org">
                 <img  height="48px"></a> 
           </li>
           <li class="NavigationItem NavigationItem--main">
-            <a class="NavigationItem-link" href="https://tiaabaseurl/">Home</a>
+            <a class="NavigationItem-link" href="https://tiaa-forum.org/">Home</a>
           </li>
           <li class="NavigationItem NavigationItem--main">
-            <a id='tiaa-contrib-button' class="NavigationItem-link" href="https://tiaabaseurl/contribute">Contribute</a>
+            <a id='tiaa-contrib-button' class="NavigationItem-link" href="https://tiaa-forum.org/contribute">Contribute</a>
           </li>
           </ul>
       </div>
@@ -28,23 +25,15 @@
       <div class="Navigation-inner">
         <ul class="Navigation-inner-list Navigation-inner-list--breadcrumb">
           <li class="NavigationItem NavigationItem--main">
-            <a class="NavigationItem-link-nobg" href="//tiaabaseurl">
+            <a class="NavigationItem-link-nobg" href="//tiaa-forum.org">
                 <img  height="48px"></a>
           </li>
           <li class="NavigationItem NavigationItem--main">
-            <a class="NavigationItem-link" href="https://tiaabaseurl/">Home</a>
+            <a class="NavigationItem-link" href="https://tiaa-forum.org/">Home</a>
           </li>
           <li class="NavigationItem NavigationItem--main">
-              <a class="NavigationItem-link" href="https://tiaabaseurl/invite-request">Signup</a>
+              <a class="NavigationItem-link" href="https://tiaa-forum.org/invite-request">Signup</a>
         </ul>
       </div>
     </div>
 </div>
-<script type="text/discourse-plugin" version="0.8">
-  $('#tiaa-header-loggedoff a, #tiaa-header-loggedon a').each(function(){
-   this.href = this.href.replace('tiaabaseurl', tiaaBaseURL); 
-});
-  $('#tiaa-header-loggedoff img, #tiaa-header-loggedon img').each(function() {
-      this.src = settings.theme_uploads.tiaa_logo_small;
-  });
-</script>
